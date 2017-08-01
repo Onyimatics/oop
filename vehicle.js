@@ -35,12 +35,11 @@ module.exports = class Vehicle {
         typeof wheels !== 'number' ||
         typeof color !== 'string'
       ) {
-        throw new ValueError ('Invalid input type');
+        throw new TypeError ('Invalid input type');
       }
     this._manufacturer = manufacturer;
-    this._wheels = wheel;
+    this._wheels = wheels;
     this._color = color;
-    this._changeColor = this._changeColor.bind(this);
   }
 
   get manufacturer () {

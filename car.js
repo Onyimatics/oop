@@ -1,4 +1,4 @@
-const vehicle = require('./vehicle');
+const Vehicle = require('./vehicle');
 
 /**
 * @class {Car}
@@ -21,11 +21,11 @@ const vehicle = require('./vehicle');
 module.exports = class Car extends Vehicle {
   constructor(manufacturer, wheels, color, model, doors) {
     if (typeof doors !== 'number' || typeof model !== 'string') {
-      throw new ValueError ('Invalid input type');
+      throw new TypeError ('Invalid input type');
     }
     super(manufacturer, wheels, color);
     this._model = model;
-    this.doors = doors;
+    this._doors = doors;
   }
 
   get doors () {

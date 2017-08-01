@@ -1,3 +1,33 @@
+/**
+* @class {Vehicle}
+* @param {manufacturer} [string]
+* @param {wheels} [number]
+* @param {color} [string]
+* @param {model} [string]
+* @param {doors} [number]
+*
+* @method {manufacturer}
+* @return {string} get manufacturer name
+*
+* @method {wheels} [getter]
+* @return {number} number of wheels
+*
+* @method {color} [getter]
+* @return {string} getvehicle colr
+*
+* @method {color} [setter]
+* @return {null} set vehicle color
+*
+* @method {changeColor} [setter] alias of color seter
+* @return {null} set vehicle color
+*
+*
+*
+* @method {drive}
+* @return {string}
+*/
+
+
 module.exports = class Vehicle {
   constructor(manufacturer, wheels, color) {
     if (

@@ -54,10 +54,6 @@ module.exports = class Vehicle {
     this._color = newColor;
   }
 
-  changeColor(newColor) {
-    return color(newColor);
-  }
-
   get color () {
     return this._color;
   }
